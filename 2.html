@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Thư viện </title>
+    <link href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <script defer src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="./jquery-3.7.1.js"></script>
+        <style>
+            a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            }
+            body {
+                 background: linear-gradient(to right, #002d64, #002853 ,#00223c , #01192b , #000000);
+                color: white;
+            }
+        
+            .top-bar {
+                background: linear-gradient(to right, #3b5998, #1b1b1b);
+                font-size: 20px;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        
+            .add-game {
+                background-color: #333;
+                padding: 10px;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+        
+            .add-game:hover {
+                background-color: #444;
+            }
+        
+            .library-sidebar {
+                width: 250px;
+                background-color: #222;
+                padding: 15px;
+                height: 100vh;
+            }
+        
+            .library-sidebar h5 {
+                border-bottom: 1px solid gray;
+                padding-bottom: 10px;
+            }
+        
+            .game-item {
+                cursor: pointer;
+                padding: 5px;
+                color: white;
+            }
+        
+            .game-item:hover {
+                background-color: #444;
+            }
+        
+            .content {
+                flex: 1;
+                text-align: center;
+                padding: 20px;
+            }
+            footer {
+         
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            }
+        </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div>
+             <a href="1.html"><img src="./anhlogo.png" alt="Swan logo" height="40">Swan</a> 
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="1.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="2.html">Thư viện</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="3.html">Cộng đồng</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="4.html">Hỗ trợ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./5.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="d-flex">
+        <div class="library-sidebar">
+            <h5>Thư viện</h5>
+            <ul class="game-list" id="gameLibrary"></ul>
+            <div class="add-game" onclick="addGame()"><a href="a.html">+ Thêm trò chơi</a></div>
+        </div>
+        <div class="content" id="selected-game">
+            <h2>Chọn một trò chơi từ thư viện</h2>
+        </div>
+    </div>
+    <footer>
+        <p>Phát triển bởi Đinh Trọng Mạnh Quân</p>
+        <p>Phiên bản: Đang trong quá trình phát triển (chưa phục vụ đầy đủ chức năng )</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let libraryContainer = document.getElementById("game-library");
+        let library = JSON.parse(localStorage.getItem("gameLibrary")) || [];
+        let selectedGameContainer = document.getElementById("selected-game");
+
+        if (library.length === 0) {
+            libraryContainer.innerHTML = "<p class='text-white text-center'>Thư viện của bạn đang trống.</p>";
+        } else {
+            library.forEach(game => {
+                let gameItem = document.createElement("li");
+                gameItem.classList.add("game-item");
+                gameItem.textContent = game.title;
+                gameItem.onclick = function () {
+                    displaySelectedGame(game);
+                };
+                document.getElementById("gameLibrary").appendChild(gameItem);
+            });
+        }
+    });
+
+    function displaySelectedGame(game) {
+        document.getElementById("selected-game").innerHTML = `
+                <div class="card bg-dark text-white text-center p-3">
+                    <img src="${game.image}" class="card-img-top mx-auto" style="width: 50%;" alt="${game.title}">
+                    <div class="card-body">
+                        <h3 class="card-title">${game.title}</h3>
+                        <p class="card-text"><strong>Giá:</strong> ${game.price}</p>
+                        <button class="btn btn-danger" onclick="removeFromLibrary('${game.title}')">Xóa</button>
+                        <button class="btn btn-primary" onclick="showDevelopmentAlert()">Mua ngay</button>
+                    </div>
+                </div>
+            `;
+    }
+
+    function removeFromLibrary(title) {
+        let library = JSON.parse(localStorage.getItem("gameLibrary")) || [];
+        library = library.filter(game => game.title !== title);
+        localStorage.setItem("gameLibrary", JSON.stringify(library));
+        location.reload();
+    }
+</script>
+<script>
+    function showDevelopmentAlert() {
+    alert("Tính năng đang phát triển!");
+    }
+</script>
+</html>

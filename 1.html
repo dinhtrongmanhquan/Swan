@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trang chủ</title>
+    <link href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <script defer src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="./jquery-3.7.1.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #012036, #091f4b ,#080132 , #03123f , #03254e);
+            color: white;
+        }
+        a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        }
+        .top-bar {
+            background: linear-gradient(to right, #3b5998, #000000);
+            font-size: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar {
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            text-align: center;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-grow: 1;
+            font-size: 25px;
+            gap: 50px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #3b5998;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .search-box input {
+            border: none;
+            padding: 5px;
+            outline: none;
+            background: transparent;
+            color: white;
+            width: 180px;
+        }
+
+        .search-box button {
+            background-color: #5a90d6;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .discount-section {
+            background-color: #191818;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .game-card {
+            background-color: #343333;
+        }
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .browse-section {
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .browse-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .browse-buttons button {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .browse-buttons button:hover {
+            opacity: 0.8;
+        }
+        .promo-banner {
+            position: relative;
+            width: 100%;
+            text-align: center;   
+            margin-top: -70px;
+            z-index: -1;
+            object-fit: cover;
+            max-width: none;
+        }
+         #search-message {
+            display: none;
+            color: red;
+            font-weight: bold;
+        }
+        .promo-banner img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+       footer {
+            margin-top: 200px;
+            background: linear-gradient(to right, #3b5998, #000000);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div>
+           <a href="1.html"><img src="./anhlogo.png" alt="Swan logo" height="40">Swan</a> 
+        </div>
+        <nav>
+            <ul class="nav">
+                
+                <li class="nav-item"><a class="nav-link text-white" href="./5.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </div>
+    <nav class="nav-bar mt-3">
+        <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="1.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="2.html">Thư viện</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="3.html">Cộng đồng</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="4.html">Hỗ trợ</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button>Tìm</button>
+        </div>
+     </nav>    
+    <div class="container promo-banner">
+            <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/7/foyqcrqwuaqbrab-1704615184986-17046151852851559396968.jpg" alt="Ưu đãi hấp dẫn">
+        </div>
+
+    <div class="container browse-section">
+        <h3>Duyệt Swan</h3>
+        <div class="browse-buttons">
+            <button><a href="#">Mới ra mắt</a></button>
+            <button><a href="c.html">Ưu đãi</a></button>
+            <button><a href="#">Trò chơi miễn phí</a></button>
+        </div>
+    </div> 
+    <div class="container mt-4 discount-section">
+        <h2>Giảm giá sâu tiêu biểu</h2>
+        <p>Đặc biệt là ưu đãi cực đại cho một số sản phẩm vĩ đại nhất mọi thời đại</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card game-card">
+                    <a href="1.1.1.html">
+                        <img src="./anhgame1.jpg" alt="Game 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Enter the Gungeon</h5>
+                            <p><span class="badge bg-success">-90%</span> <del>$14.99</del> <strong>$1.49</strong></p>
+                    </a>
+                    <button class="btn btn-secondary"
+                    onclick="addToLibrary('Enter the Gungeon', './anhgame1.jpg', '$1.49')">Thêm vào thư
+                    viện</button></a>
+                    <button class="btn btn-primary" onclick="showDevelopmentAlert()">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card game-card">
+                    <a href="1.1.2.html">
+                    <img src="anhgame2.jpg" alt="Game 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Half-Life: Alyx</h5>
+                        <p><span class="badge bg-success">-70%</span> <del>$59.99</del> <strong>$17.99</strong></p>
+                    </a>
+                        <button class="btn btn-secondary"
+                        onclick="addToLibrary('Half-Life: Alyx', 'anhgame2.jpg', '$3.49')">Thêm vào thư viện</button></a>
+                        <button class="btn btn-primary" onclick="showDevelopmentAlert()">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card game-card">
+                    <a href="1.1.3.html">
+                    <img src="./anhgame3.png" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">DARK SOULS™ II</h5>
+                        <p><span class="badge bg-success">-30%</span> <del>$39.99</del> <strong>$27.99</strong></p>
+                    </a>
+                        <button class="btn btn-secondary"
+                        onclick="addToLibrary('DARK SOULS™ II', 'anhgame3.png', '$27.99')">Thêm vào thư
+                        viện</button>
+                        <button class="btn btn-primary" onclick="showDevelopmentAlert()">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Phát triển bởi Đinh Trọng Mạnh Quân</p>
+        <p>Phiên bản: Đang trong quá trình phát triển (chưa phục vụ đầy đủ chức năng )</p>
+    </footer>
+</body>
+<script>
+        function search() {
+                        let searchInput = document.querySelector(".search-box input");
+                    searchInput.value = "Đang phát triển!";
+            
+            setTimeout(() => {
+                        searchInput.value = ""; 
+            }, 2000);
+        }
+
+                    document.querySelector(".search-box button").addEventListener("click", search);
+                    document.querySelector(".search-box input").addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+                        search();
+            }
+        });
+        function addToLibrary(title, image, price) {
+                let game = {
+                    title: title,
+                    image: image,
+                    price: price
+                };
+                let library = JSON.parse(localStorage.getItem("gameLibrary")) || [];
+
+                if (!library.some(g => g.title === game.title)) {
+                    library.push(game);
+                    localStorage.setItem("gameLibrary", JSON.stringify(library));
+                    alert("Đã thêm vào thư viện!");
+                } else {
+                    alert("Game đã có trong thư viện!");
+                }
+            }
+            document.addEventListener("DOMContentLoaded", function () {
+                    var freeGameButton = document.querySelector(".browse-buttons button:last-child");
+
+                    freeGameButton.addEventListener("click", function () {
+                        alert("Hiện chưa có trò chơi nào miễn phí.");
+                    });
+                });
+            document.addEventListener("DOMContentLoaded", function () {
+                    var firstGameButton = document.querySelector(".browse-buttons button:first-child");
+
+                    firstGameButton.addEventListener("click", function () {
+                        alert("Hiện chưa có trò chơi nào được thêm vào gần đây.");
+                    });
+                });
+
+</script>
+</html>

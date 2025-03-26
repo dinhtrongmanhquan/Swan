@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enter the Gungeon</title>
+    <link href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <script defer src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #102e18, #000000);
+            color: #ffffff;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .top-bar {
+           background: linear-gradient(to right,#000000 ,#102e18 ,#1b6330);
+            font-size: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar {
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            text-align: center;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+
+        .game-header {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .game-content {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .game-video video {
+            width: 100%;
+            max-width: 580px;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+        }
+
+        .game-info {
+            max-width: 400px;
+        }
+
+        .game-info h2 {
+            color: #ffc107;
+        }
+
+        .game-info .btn {
+            margin-top: 10px;
+        }
+
+        .game-description {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            margin-top: 100px;
+            background: linear-gradient(to right, #216435, #1b1b1b);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div>
+            <a href="1.html"><img src="./anhlogo.png" alt="Swan logo" height="40">Swan</a>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="1.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="2.html">Thư viện</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="3.html">Cộng đồng</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="4.html">Hỗ trợ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="5.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container game-header">
+        <h1>Half-Life: Alyx</h1>
+        <img src="https://clan.fastly.steamstatic.com/images/38516650/bb68c88567b7627a37a7aa23b43c90f4acb7f55d.jpg" alt="anh">
+    </div>
+
+    <div class="container game-content">
+        <div class="game-video">
+            <video autoplay loop muted>
+                <img src="./anhgame2.jpg" alt="game 2">
+                <source src="https://video.fastly.steamstatic.com/store_trailers/256776744/movie480.webm?t=1583175743"
+                    type="video/mp4">
+            </video>
+        </div>
+        <div class="game-info">
+            <h2>Half-Life: Alyx</h2>
+            <p>Half-Life: Alyx chính là sự trở về của Valve với sê-ri Half-Life qua phương diện thực tế ảo. Đó là câu
+                truyện về cuộc
+                chiến không tưởng giữa chủng tộc ngoài hành tinh bạo tàn mang tên Combine, mốc thời gian nằm giữa sự
+                kiện Half-Life và
+                Half-Life 2.</p>
+            <p><strong>Nhà phát triển:</strong> Valve</p>
+            <p><strong>Nhà phát hành:</strong> Valve</p>
+            <p><strong>Ngày phát hành:</strong> 23 Tháng 3, 2020</p>
+            <p><strong>Thể loại:</strong> Hành động, Phiêu lưu</p>
+            <p><span class="badge bg-success">-70%</span> <del>$59.99</del> <strong>$17.99</strong></p>
+            <button class="btn btn-primary" onclick="showDevelopmentAlert()">Mua ngay</button>
+            <button class="btn btn-secondary" onclick="addToLibrary()">Thêm vào thư viện</button>
+        </div>
+    </div>
+
+    <div class="container mt-5 game-description">
+        <h2>Về trò chơi này</h2>
+        <p>Half-Life: Alyx chính là sự trở về của Valve với sê-ri Half-Life qua phương diện thực tế ảo. Đó là câu truyện về cuộc
+            chiến không tưởng giữa chủng tộc ngoài hành tinh bạo tàn mang tên Combine, mốc thời gian nằm giữa sự kiện Half-Life
+            và
+            Half-Life 2.</p>       
+        <p>Nhập vai Alyx Vance, bạn là cơ hội duy nhất của nhân loại trong cuộc chiến sinh tồn. Kể từ sau biến cố Black Mesa,
+            quyền
+            kiểm soát hành tinh của Combine ngày một tăng vì chúng nhồi nhét phần dân số còn lại trong các thành phố. Trong số
+            đó
+            còn sót lại một vài nhà khoa học vĩ đại nhất Trái Đất: bạn và ba của bạn, Tiến sĩ Eli Vance.</p>
+        
+        <p>Là nhà sáng lập của lực lượng kháng chiến còn non trẻ, bạn đã luôn hoạt động khoa học trong bí mật—tiến hành các
+            nghiên
+            cứu then chốt và thiết kế những đạo cụ quý báu dành cho số ít người đủ can đảm để chống lại Combine.</p>
+        
+        <p>Mỗi ngày trôi qua, bạn lại hiểu thêm về quân thù, nhờ đó tiến xa thêm trong việc tìm ra yếu điểm của chúng.</p>
+        
+        <h6>VỀ CÁCH CHƠI THỰC TẾ ẢO:</h6>
+        
+        <p>Valve quay về với vũ trụ Half-Life, khởi điểm của mọi thứ, và bắt đầu phát triển môi trường thực tế ảo từ những điều
+            cơ
+            bản nhất. VR đã được dựng nên để khai phá lối chơi làm nên cốt lõi của Half-Life.</p>
+        
+        <p>Đắm mình trong các tương tác có chiều sâu với môi trường, giải đố, khám phá thế giới, và giao tranh đẫm máu.</p>
+        
+        <p>Tựa vào bức tường hư nát và khom lưng dưới một con thòng lọng để ngắm bắn một phát đạn ảo vô đối. Lục lọi kệ tủ để
+            tìm
+            ống tiêm hồi máu cũng như đạn shotgun. Thao túng công cụ để đột nhập vào giao diện của lực lượng ngoài hành tinh.
+            Ném
+            chai lọ qua cửa sổ để đánh lạc hướng quân địch. Gỡ con cua mũ ra khỏi mặt và ném nó ra ngoài cửa sổ.</p>
+    </div>
+    <footer>
+        <p>Phát triển bởi Đinh Trọng Mạnh Quân</p>
+        <p>Phiên bản: Đang trong quán trình phát triển (chưa phục vụ đầy đủ chức năng )</p>
+    </footer>
+</body>
+    <script>
+        function addToLibrary() {
+            let game = {
+                title: "Half-Life: Alyx",
+                image: "./anhgame2.jpg",
+                price: "$17.99"
+            };
+
+            let library = JSON.parse(localStorage.getItem("gameLibrary")) || [];
+
+            if (!library.some(g => g.title === game.title)) {
+                library.push(game);
+                localStorage.setItem("gameLibrary", JSON.stringify(library));
+                alert("Đã thêm vào thư viện!");
+            } else {
+                alert("Game đã có trong thư viện!");
+            }
+        }
+    </script>
+    <script>
+        function showDevelopmentAlert() {
+            alert("Tính năng đang phát triển!");
+        }
+    </script>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enter the Gungeon</title>
+    <link href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <script defer src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #151515, #343534 ,#3b3b3b , #3b3b3b , #1c1c1c);
+            color: white;
+        }
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .top-bar {
+            background: linear-gradient(to right, #000000, #343534 ,#0c0b0b , #3b3b3b , #000000);
+           font-size: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         .category-card {
+            position: relative;
+            width: 300px;
+            height: 180px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .category-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        .category-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 150, 255, 0.4);
+        }
+
+        .category-title {
+            position: absolute;
+            background: white;
+            color: #004aad;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .carousel-inner {
+            display: flex;
+            gap: 10px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+        }
+        .nav-bar {
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            text-align: center;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+
+        .game-header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .game-content {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .game-video video {
+            width: 100%;
+            max-width: 580px;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+        }
+        .game-info {
+            max-width: 400px;
+        }
+
+        .game-info h2 {
+            color: #ffc107;
+        }
+
+        .game-info .btn {
+            margin-top: 10px;
+        }
+
+        .game-description {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            margin-top: 100px;
+           background: linear-gradient(to right, #000000, #343534 ,#0c0b0b , #3b3b3b , #000000);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div>
+            <a href="1.html"><img src="./anhlogo.png" alt="Swan logo" height="40">Swan</a>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="./1.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./2.html">Thư viện</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="3.html">Cộng đồng</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="4.html">Hỗ trợ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./5.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container game-header">
+        <h1>DARK SOULS™ II</h1>
+        <img src="./sale.png" alt="anh">
+    </div>
+
+    <div class="container game-content">
+        <div class="game-video">
+            <video autoplay loop muted>
+                <img src="./anhgame3.png" alt="game 2">
+                <source src="https://video.fastly.steamstatic.com/store_trailers/2031637/movie480.webm?t=1447361124"
+                    type="video/mp4">
+            </video>
+        </div>
+        <div class="game-info">
+            <h2>DARK SOULS™ II</h2>
+            <p>Được phát triển bởi FROM SOFTWARE, DARK SOULS™ II là phần tiếp theo được mong đợi của Dark Souls, một tựa game đột phá
+            đầy thử thách năm 2011. Trải nghiệm nhập vai hành động cổ điển độc đáo này đã thu hút trí tưởng tượng của các game thủ
+            trên toàn thế giới với thử thách đáng kinh ngạc.</p>
+            <p><strong>Nhà phát triển:</strong> FromSoftware, Inc.</p>
+            <p><strong>Nhà phát hành:</strong> BANDAI NAMCO Entertainment, FromSoftware, Inc.</p>
+            <p><strong>Ngày phát hành:</strong>25 Tháng 4, 2014</p>
+            <p><strong>Thể loại:</strong> Hành động, Nhập vai (RPG)</p>
+            <p><span class="badge bg-success">-30%</span> <del>$39.99</del> <strong>$27.99</strong></p>
+            <button class="btn btn-primary" onclick="showDevelopmentAlert()">Mua ngay</button>
+            <button class="btn btn-secondary" onclick="addToLibrary()">Thêm vào thư viện</button>
+        </div>
+    </div>
+
+    <div class="container mt-5 game-description">
+        <h2>Về trò chơi này</h2>
+        <p>Được phát triển bởi FROM SOFTWARE, DARK SOULS™ II là phần tiếp theo được mong đợi cao của Dark Souls, một cú đột phá đầy
+        gian nan vào năm 2011. Trải nghiệm nhập vai hành động theo phong cách cũ độc đáo đã thu hút trí tưởng tượng của các game
+        thủ trên toàn thế giới với thử thách đáng kinh ngạc và phần thưởng cảm xúc mãnh liệt.
+        
+        DARK SOULS™ II mang đến sự đổi mới về lối chơi hấp dẫn và sự tối tăm nổi tiếng của thương hiệu này cho cả trải nghiệm
+        chơi đơn và nhiều người chơi.
+        
+        Tham gia hành trình đen tối và trải nghiệm những cuộc chạm trán với kẻ thù áp đảo, những mối nguy hiểm ma quỷ và thử
+        thách không ngừng mà chỉ FROM SOFTWARE mới có thể mang lại.</p>
+    </div>
+    <footer>
+        <p>Phát triển bởi Đinh Trọng Mạnh Quân</p>
+        <p>Phiên bản: Đang trong quán trình phát triển (chưa phục vụ đầy đủ chức năng )</p>
+    </footer>
+</body>
+<script>
+    function addToLibrary() {
+        let game = {
+            title: "DARK SOULS™ II",
+            image: "anhgame3.png",
+            price: "$27.99"
+        };
+
+        let library = JSON.parse(localStorage.getItem("gameLibrary")) || [];
+
+        if (!library.some(g => g.title === game.title)) {
+            library.push(game);
+            localStorage.setItem("gameLibrary", JSON.stringify(library));
+            alert("Đã thêm vào thư viện!");
+        } else {
+            alert("Game đã có trong thư viện!");
+        }
+    }
+</script>
+<script>
+    function showDevelopmentAlert() {
+        alert("Tính năng đang phát triển!");
+    }
+</script>
+
+</html>

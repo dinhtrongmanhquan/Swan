@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cộng đồng</title>
+    <link href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <script defer src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="./jquery-3.7.1.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #151515, #032551 , #1d1d1d);
+            color: rgb(0, 0, 0);
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .trr {
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            font-size: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .crr {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #2a475e;
+            border-radius: 10px;
+        }
+
+        .search-bar {
+            background-color: #d4d3d3;
+            border: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .btn {
+            background-color: #66c0f4;
+            border: none;
+        }
+        .t {
+            color:rgb(0, 0, 0);
+        }
+        footer {
+            margin-top: 300px;
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trr">
+        <div>
+            <a href="1.html"><img src="./anhlogo.png" alt="Swan logo" height="40">Swan</a>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="1.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="2.html">Thư viện</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="3.html">Cộng đồng</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="4.html">Hỗ trợ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./5.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container crr">
+        <h2 class="text-center">Hoạt động cộng đồng</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <input type="text" class="form-control search-bar" placeholder="Tìm sản phẩm...">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control search-bar" placeholder="Tìm kiếm bạn bè...">
+            </div>
+        </div>
+    <div class="text-center mt-4">
+        <h4 class="t">Cộng đồng chưa được phát triển!</h4>
+    </div>
+    </div>
+        <div class="text-center mt-4">
+            <button class="btn"><a href="b.html">Phổ biến nhất</a></button>
+            <button class="btn"><a href="b.html">Gần đây nhất</a></button>
+        </div>
+    </div>
+    <footer>
+        <p>Phát triển bởi Đinh Trọng Mạnh Quân</p>
+        <p>Phiên bản: Đang trong quá trình phát triển (chưa phục vụ đầy đủ chức năng)</p>
+    </footer>
+</body>
+    <script>
+        $(document).ready(function () {
+            $('.search-bar').on('input', function () {
+                alert('Tính năng đang phát triển!');
+            });
+        });
+    </script>
+</html>

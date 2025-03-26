@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enter the Gungeon</title>
+    <link href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <script defer src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #0d2250, #501111);
+            color: white;
+        }
+        a {
+            color: rgb(238, 238, 238);
+            text-decoration: none;
+        }
+        .top-bar {
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            font-size: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar {
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            text-align: center;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+
+        .game-header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .game-content {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .game-video img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .game-info {
+            max-width: 400px;
+        }
+
+        .game-info h2 {
+            color: #ffc107;
+        }
+
+        .game-info .btn {
+            margin-top: 10px;
+        }
+
+        .game-description {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            margin-top: 100px;
+            background: linear-gradient(to right, #3b5998, #1b1b1b);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div>
+            <a href="1.html"><img src="./anhlogo.png" alt="Swan logo" height="40">Swan</a>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="./1.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./2.html">Thư viện</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="3.htmlhtml">Cộng đồng</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="4.htmlhtml">Hỗ trợ</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./5.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container game-header">
+        <h1>Enter the Gungeon</h1>
+        <img src="https://clan.fastly.steamstatic.com/images/39026134/c1b2498a218712d6e42b22179d0334398159db6d.png" alt="anh">
+    </div>
+
+    <div class="container game-content">
+        <div class="game-video">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/457840/ss_515d40a7ec7a6ce52def1308f4bb1d05cf285bcc.600x338.jpg?t=1691624277" alt="Game Preview">
+        </div>
+        <div class="game-info">
+            <h2>Enter the Gungeon</h2>
+            <p>Enter the Gungeon là một trò chơi bắn súng với cơ chế bullet hell, nơi người chơi điều khiển một nhóm
+                nhân vật
+                tìm kiếm khẩu súng huyền thoại có thể xoá bỏ quá khứ.</p>
+            <p><strong>Nhà phát triển:</strong> Dodge Roll</p>
+            <p><strong>Nhà phát hành:</strong> Devolver Digital</p>
+            <p><strong>Ngày phát hành:</strong> 5 Tháng 4, 2016</p>
+            <p><strong>Thể loại:</strong> Hành động, Phiêu lưu, Indie</p>
+            <p><span class="badge bg-success">-90%</span> <del>$14.99</del> <strong>$1.49</strong></p>
+            <button class="btn btn-primary" onclick="showDevelopmentAlert()">Mua ngay</button>
+            <button class="btn btn-secondary" onclick="addToLibrary()">Thêm vào thư viện</button>
+        </div>
+    </div>
+
+    <div class="container mt-5 game-description">
+        <h2>Về trò chơi này</h2>
+        <p>Enter the Gungeon là một game nhập vai địa ngục đạn theo chân một nhóm những kẻ lập dị tìm cách bắn, cướp bóc, né tránh
+        và lật bàn để được tha thứ bằng cách tiếp cận kho báu cuối cùng của Gungeon huyền thoại: khẩu súng có thể giết chết quá
+        khứ. Chọn một anh hùng [hoặc hợp tác trong chế độ hợp tác] và chiến đấu theo cách của bạn đến tận cùng của Gungeon bằng
+        cách sống sót qua một loạt các tầng đầy thử thách và phát triển với những Gundead đáng yêu nguy hiểm và những tên trùm
+        Gungeon đáng sợ được trang bị vũ khí đến tận răng. Thu thập chiến lợi phẩm quý giá, khám phá những bí mật ẩn giấu và trò
+        chuyện với những thương gia và chủ cửa hàng cơ hội để mua những vật phẩm mạnh mẽ để giành lợi thế.</p>
+        
+        <p>The Gungeon: Enter the Gungeon - một pháo đài địa ngục đạn liên tục phát triển, kết hợp khéo léo các căn phòng được
+        thiết kế thủ công tỉ mỉ trong một mê cung được tạo theo thủ tục nhằm phá hủy tất cả những gì xâm nhập vào các bức tường
+        của nó. Nhưng hãy cẩn thận - Gungeon phản ứng với ngay cả chiến thắng khiêm tốn nhất trước lính canh và bẫy của nó bằng
+        cách tăng tiền cược và những thách thức được tìm thấy bên trong!
+        
+        <p>Giáo phái Gundead: Gungeon không chỉ có bẫy và vực thẳm – hãy bình tĩnh và nhắm chuẩn xác khi bạn đối mặt với Giáo phái
+        Gundead đầy súng. Những môn đồ của súng này sẽ không dừng lại trước bất cứ điều gì để hạ gục các anh hùng và sử dụng mọi
+        chiến thuật cần thiết để bảo vệ ngôi đền của họ.</p>
+        
+        <p>Gungeoneers: Lựa chọn giữa một trong số nhiều anh hùng không giống ai, mỗi người đều mang trong mình nỗi hối tiếc sâu
+        sắc và đang tìm cách thay đổi quá khứ của mình, bất kể phải trả giá như thế nào. Tràn đầy lòng dũng cảm và sự tuyệt
+        vọng, những nhà thám hiểm này sẽ không ngần ngại lao qua những bức tường rực lửa, lăn qua bức tường đạn hoặc ẩn núp sau
+        bất cứ thứ gì xung quanh để đến được mục tiêu của mình mà vẫn sống sót!</p>
+        
+        <p>The Guns: Khám phá và mở khóa hàng loạt khẩu súng độc đáo tuyệt vời để tiêu diệt mọi kẻ thù của bạn trong Gungeon – mỗi
+        khẩu súng đều mang theo chiến thuật và đạn dược độc đáo của riêng mình. Giải phóng mọi thứ từ hỗn hợp tên lửa, tia laser
+        và đạn đại bác đã được thử nghiệm và chứng minh là hiệu quả cho đến loạt đạn cầu vồng, cá, phi tiêu bọt và ong kỳ lạ!
+        Vâng, ong.</p>
+    </div>
+    <footer>
+        <p>Phát triển bởi Đinh Trọng Mạnh Quân</p>
+        <p>Phiên bản: Đang trong quán trình phát triển (chưa phục vụ đầy đủ chức năng )</p>
+    </footer>
+</body>
+ <script>
+        function addToLibrary() {
+            let game = {
+                title: "Enter the Gungeon",
+                image: "./anhgame1.jpg",
+                price: "$1.49"
+            };
+
+            let library = JSON.parse(localStorage.getItem("gameLibrary")) || [];
+
+            if (!library.some(g => g.title === game.title)) {
+                library.push(game);
+                localStorage.setItem("gameLibrary", JSON.stringify(library));
+                alert("Đã thêm vào thư viện!");
+            } else {
+                alert("Game đã có trong thư viện!");
+            }
+        }
+    </script>
+        <script>
+            function showDevelopmentAlert() {
+                alert("Tính năng đang phát triển!");
+            }
+        </script>
+</html>
